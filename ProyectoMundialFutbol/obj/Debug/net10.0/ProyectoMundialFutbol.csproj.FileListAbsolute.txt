@@ -1,0 +1,15 @@
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\bin\Debug\net10.0\ProyectoMundialFutbol.exe
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\bin\Debug\net10.0\ProyectoMundialFutbol.deps.json
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\bin\Debug\net10.0\ProyectoMundialFutbol.runtimeconfig.json
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\bin\Debug\net10.0\ProyectoMundialFutbol.dll
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\bin\Debug\net10.0\ProyectoMundialFutbol.pdb
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.AssemblyInfoInputs.cache
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.AssemblyInfo.cs
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.csproj.CoreCompileInputs.cache
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.sourcelink.json
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.dll
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\refint\ProyectoMundialFutbol.dll
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.pdb
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ProyectoMundialFutbol.genruntimeconfig.cache
+C:\Github proyect\ProyectoMundialFutbol\ProyectoMundialFutbol\obj\Debug\net10.0\ref\ProyectoMundialFutbol.dll

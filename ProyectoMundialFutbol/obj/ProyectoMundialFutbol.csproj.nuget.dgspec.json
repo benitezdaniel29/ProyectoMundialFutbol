@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj": {}
+    "C:\\Github proyect\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj": {}
   },
   "projects": {
-    "D:\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj": {
+    "C:\\Github proyect\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj",
+        "projectUniqueName": "C:\\Github proyect\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj",
         "projectName": "ProyectoMundialFutbol",
-        "projectPath": "D:\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\obj\\",
+        "projectPath": "C:\\Github proyect\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\ProyectoMundialFutbol.csproj",
+        "packagesPath": "C:\\Users\\DANIEL\\.nuget\\packages\\",
+        "outputPath": "C:\\Github proyect\\ProyectoMundialFutbol\\ProyectoMundialFutbol\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DANIEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
