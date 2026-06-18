@@ -44,33 +44,33 @@ do
                    IngresarResultado(goles ,  selecciones);
                    break;
 
-            //    case 5:
-            //        VerEstadisticasSeleccion();
-            //        break;
+        case 5:
+            VerEstadisticasSeleccion(selecciones);
+            break;
 
-            //    case 6:
-            //        MostrarTablaPosiciones();
-            //        break;
+        //    case 6:
+        //        MostrarTablaPosiciones();
+        //        break;
 
-            //    case 7:
-            //        GenerarTorneoAleatorio();
-            //        break;
+        //    case 7:
+        //        GenerarTorneoAleatorio();
+        //        break;
 
-            //    case 8:
-            //        EstadisticasTorneo();
-            //        break;
+        //    case 8:
+        //        EstadisticasTorneo();
+        //        break;
 
-            //    case 9:
-            //        EjercicioAdicional();
-            //        break;
+        //    case 9:
+        //        EjercicioAdicional();
+        //        break;
 
-            //    case 10:
-            //        Console.WriteLine("Saliendo...");
-            //        break;
+        //    case 10:
+        //        Console.WriteLine("Saliendo...");
+        //        break;
 
-            //    default:
-            //        Console.WriteLine("Opción inválida.");
-            //        break;
+        default:
+                  Console.WriteLine("Opción inválida.");
+                   break;
     }
 
     if (opcion != 10)
@@ -91,9 +91,10 @@ int CargarSelecciones(ref string[] equipos)
     Console.WriteLine("Ingrese la cantidad de selecciones: ");
     int cantidad;
     cantidad = int.Parse(Console.ReadLine());
-
+    
     for (int i = 0; i < cantidad; i++)
-    {
+    {   
+       
         Console.Write($"Ingrese el nombre de la selección {i + 1}: ");
         equipos[i] = Console.ReadLine();
     }
@@ -182,3 +183,48 @@ for (int i = 0; i < goles.GetLength(0); i++)
             Console.WriteLine($"El resultado del partido es : {goles[i, j]}");
         }
     }
+
+
+
+
+void VerEstadisticasSeleccion(string[] paises)
+{   
+    Console.WriteLine("INGRESE SELECCION");
+    string sel = Console.ReadLine();
+   int existe = Array.IndexOf(paises, sel);
+    
+    if(existe != -1)
+    {   
+        Random rnd = new Random();
+        int golesAfavor = 0;
+        int golesEnContra = 0;
+        for (int j = 0; j < goles.GetLength(0); j++)
+        {
+            Console.WriteLine($" valores posicion {j} ");
+            goles[0, j] = rnd.Next(0,4);
+        }
+        Console.WriteLine("Datos cargados:");
+        // aqui hacemos la suma de la matriz fila x columna 
+        for (int j = 0; j < goles.GetLength(0); j++)
+        {
+            golesAfavor += goles[0, j];
+        }
+       
+        Console.WriteLine($"{sel.ToUpper()} goles a favor :{golesAfavor}");
+    }
+    else
+    {
+
+    Console.WriteLine("nO EXISTE `PERRO");
+    }
+
+    
+}
+
+
+
+
+
+
+
+
