@@ -1,6 +1,12 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 
-string[] selecciones = new string[20];
+string[] selecciones =
+{
+    "Argentina",
+    "Jordania",
+    "Argelia",
+    "Austria"
+};
 int[,] goles = new int[3, 3];
 
 // funcion de elegir opciones en menu
@@ -24,11 +30,11 @@ do
     Console.Write("Seleccione una opción: ");
 
     opcion = int.Parse(Console.ReadLine());
-    int N = 0;
+    
     switch (opcion)
     {
         case 1:
-            N = CargarSelecciones(ref selecciones);
+            CargarSelecciones(ref selecciones);
 
             break;
 
@@ -84,29 +90,18 @@ do
 
 
 // funcion de cargar selecciones 
-int CargarSelecciones(ref string[] equipos)
+void CargarSelecciones(ref string[] equipos)
 {
     Console.Clear();
-    Console.WriteLine("===== CARGAR SELECCIONES =====");
-    Console.WriteLine("Ingrese la cantidad de selecciones: ");
-    int cantidad;
-    cantidad = int.Parse(Console.ReadLine());
-    
-    for (int i = 0; i < cantidad; i++)
-    {   
-       
-        Console.Write($"Ingrese el nombre de la selección {i + 1}: ");
-        equipos[i] = Console.ReadLine();
-    }
     int posicion = 1;
     Console.WriteLine("==== SELECCIONES CARGADAS ====");
-    for (int i = 0; i < cantidad; i++)
+    for (int i = 0; i < equipos.Length; i++)
     {
         posicion = i + 1;
         Console.WriteLine($"{posicion}) {equipos[i]}");
 
     }
-    return cantidad;
+    //return equipos;
 }
 // aqui recibimos el resultado de la funcion cargar selecciones para usarlo en otras funciones
 
@@ -115,8 +110,8 @@ int CargarSelecciones(ref string[] equipos)
 void MostrarSelecciones(string[] equipos)
 {
     Console.Clear();
-    Console.WriteLine("===== mostrar selecciones =====");
-    for (int i = 0; i < 2; i++)
+    Console.WriteLine("===== MOSTRAR SELECCIONES =====");
+    for (int i = 0; i < equipos.Length; i++)
     {
         Console.WriteLine($"{i + 1}) {equipos[i]}");
     }
@@ -152,39 +147,45 @@ void IngresarResultado(int[,] goles , string[] paises)
     string equipo1 = Console.ReadLine();
     Console.WriteLine("Ingrese el nombre del SEGUNDO equipo :");
     string equipo2 = Console.ReadLine();
-    int i = Array.IndexOf(paises, equipo1);
-    int j = Array.IndexOf(paises, equipo2);
-
-    if (i == -1 || j == -1)
+    // hacer con un FOR para mostrar los paises disponibles y que el usuario elija por numero de posicion en vez de escribir el nombre del pais
+   // int i = Array.IndexOf(paises, equipo1);
+    //int j = Array.IndexOf(paises, equipo2);
+  int j = 0;
+    int i = 0;
+    for (int i = 0;i < paises.Length; i++)
     {
-        Console.WriteLine("Uno o ambos equipos no existen.");
-        return;
+        j++;
+         if (paises[i] == equipo1)
+        {
+           
+        }
+        if (paises[i] == equipo2)
+        {
+           
+        }
+        if (equipo1 == equipo2)
+        {
+            Console.WriteLine("Un equipo no puede jugar contra sí mismo.");
+        }
     }
-    // hola cambios git
-   // hola prueba git
-
-    if (i == j)
-    {
-        Console.WriteLine("Un equipo no puede jugar contra sí mismo.");
-        return;
-    }
-
     goles[i, j] = rnd.Next(0, 6);
     goles[j, i] = rnd.Next(0, 6);
-    Console.WriteLine();
+   
     Console.WriteLine($"{equipo1} {goles[i, j]} - {goles[j, i]} {equipo2}");
-}
 
+
+}
 
 for (int i = 0; i < goles.GetLength(0); i++)
     {
-        for (int j = 0; j < goles.GetLength(1); j++)
+        for ( int j = 0; j < goles.GetLength(1); j++)
         {
             Console.WriteLine($"El resultado del partido es : {goles[i, j]}");
         }
     }
 
 
+ 
 
 
 void VerEstadisticasSeleccion(string[] paises)
@@ -197,7 +198,6 @@ void VerEstadisticasSeleccion(string[] paises)
     {   
         Random rnd = new Random();
         int golesAfavor = 0;
-        int golesEnContra = 0;
         for (int j = 0; j < goles.GetLength(0); j++)
         {
             Console.WriteLine($" valores posicion {j} ");
@@ -220,7 +220,7 @@ void VerEstadisticasSeleccion(string[] paises)
 
     
 }
-
+Console.ReadKey();
 
 
 
